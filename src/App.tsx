@@ -50,7 +50,7 @@ const App = () => {
       name: "Option 10",
     },
   ];
-  const [preview, setPreview] = useState(false);
+  const [preview, setPreview] = useState(true);
   const [dropdownValue, setDropdownValue] = useState<{
     id: number;
     name: string;
