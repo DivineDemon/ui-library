@@ -6,18 +6,16 @@ import { Check, ChevronsUpDown } from "lucide-react";
 
 interface DropdownProps {
   icon?: ReactNode;
+  options: Option[];
   placeholder: string;
+  value: Option | null;
   listClassName?: string;
   selectedIcon?: ReactNode;
   toggleClassName?: string;
   listItemClassName?: string;
   defaultIconClassName?: string;
   defaultSelectedIconClassName?: string;
-  options: { id: number; name: string }[];
-  value: { id: number; name: string } | null;
-  setValue: React.Dispatch<
-    React.SetStateAction<{ id: number; name: string } | null>
-  >;
+  setValue: React.Dispatch<React.SetStateAction<Option | null>>;
 }
 
 const Dropdown = ({

@@ -15,3 +15,23 @@ export const dropdownTypes = [
     type: "Dispatch<React.SetStateAction<{ id: number; name: string } | null>>",
   },
 ];
+
+
+export const multiselectTypes = [
+  { id: 1, name: "icon", type: "ReactNode?" },
+  { id: 2, name: "options", type: "Option[]" },
+  { id: 3, name: "placeholder", type: "string" },
+  { id: 4, name: "value", type: "Option[] | null" },
+  { id: 5, name: "listClassName", type: "string?" },
+  { id: 6, name: "removeIcon", type: "ReactNode?" },
+  { id: 7, name: "toggleClassName", type: "string?" },
+  { id: 8, name: "listItemClassName", type: "string?" },
+  { id: 9, name: "defaultIconClassName", type: "string?" },
+  { id: 10, name: "selectedBadgeClassName", type: "string?" },
+  { id: 11, name: "defaultSelectedIconClassName", type: "string?" },
+  {
+    id: 12,
+    name: "setValue",
+    type: "Dispatch<React.SetStateAction<Option[] | null>>",
+  },
+];

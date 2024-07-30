@@ -3,7 +3,7 @@ Custom UI Components using React + Tailwind, Fully Type Safe and Next.js Compati
 
 ### Component List
 - [x] Dropdown
-- [ ] Multiselect
+- [x] Multiselect
 - [ ] Select Menu
 - [ ] Accordion
 - [ ] Select Menu with Search
