@@ -1,9 +1,15 @@
 import { useState } from "react";
+
+import {
+  comboBoxBlock,
+  dropDownBlock,
+  multiSelectBlock,
+} from "./data/codeblocks";
 import { cn } from "./utils/helpers";
 import CodeBlock from "./components/CodeBlock";
-import { dropdownTypes, multiselectTypes } from "./data/types";
-import { dropDownBlock, multiSelectBlock } from "./data/codeblocks";
+import { comboboxTypes, dropdownTypes, multiselectTypes } from "./data/types";
 import DropdownImplementation from "./implementations/DropdownImplementation";
+import ComboboxImplementation from "./implementations/ComboboxImplementation";
 import MultiselectImplementation from "./implementations/MultiselectImplementation";
 
 const App = () => {
@@ -21,6 +27,13 @@ const App = () => {
       codeblock: multiSelectBlock,
       typeArray: multiselectTypes,
       implementation: MultiselectImplementation,
+    },
+    {
+      id: 3,
+      name: "Combobox",
+      codeblock: comboBoxBlock,
+      typeArray: comboboxTypes,
+      implementation: ComboboxImplementation,
     },
   ];
   const [preview, setPreview] = useState(true);
@@ -58,7 +71,9 @@ const App = () => {
                   "p-5": preview,
                 })}
               >
-                {preview ? <element.implementation /> : (
+                {preview ? (
+                  <element.implementation />
+                ) : (
                   <CodeBlock text={element.codeblock} />
                 )}
               </div>

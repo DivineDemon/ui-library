@@ -4,6 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  input {
+    @apply focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0;
+  }
+
+  button {
+    @apply focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0;
+  }
+
+  a {
+    @apply focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0;
+  }
+
+  textarea {
+    @apply focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
